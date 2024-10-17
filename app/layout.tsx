@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Nunito } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 
-const nunito = Nunito({
+const nunito = Poppins({
   weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
 });
