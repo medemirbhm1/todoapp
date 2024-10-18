@@ -50,7 +50,7 @@ export default function Navbar() {
         </NavigationMenu>
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
           <SheetTrigger asChild>
-            <button  className="md:hidden">
+            <button className="md:hidden">
               <Menu className="h-6 w-6" />
               <span className="sr-only">Toggle Menu</span>
             </button>
@@ -90,13 +90,19 @@ export default function Navbar() {
           </SheetContent>
         </Sheet>
         <div className="hidden lg:flex gap-4">
-          <Button
-            variant="ghost"
-            className="text-white hover:bg-white/5 hover:text-white"
-          >
-            Register
-          </Button>
-          <Button variant="outline" className="text-black">Login</Button>
+          <Link href={routes.SIGNUP}>
+            <Button
+              variant="ghost"
+              className="text-white hover:bg-white/5 hover:text-white"
+            >
+              Sign Up
+            </Button>
+          </Link>
+          <Link href={routes.LOGIN}>
+            <Button variant="outline" className="text-black">
+              Login
+            </Button>
+          </Link>
         </div>
       </div>
     </header>
