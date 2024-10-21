@@ -14,7 +14,7 @@ import routes from "@/lib/routes";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import {  useForm } from "react-hook-form";
+import { useForm } from "react-hook-form";
 import { z } from "zod";
 
 const taskFormSchema = z.object({
@@ -48,7 +48,7 @@ function Page() {
   return (
     <div className="container max-w-4xl pt-10">
       <h1 className="text-2xl lg:text-6xl text-center font-semibold mb-4">
-        Ajouter une nouvelle tâche
+        Add a new task
       </h1>
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
@@ -68,7 +68,7 @@ function Page() {
           />
           <FormMessage>{form.formState.errors.root?.message}</FormMessage>
           <Button type="submit" className="w-full" disabled={loading}>
-            Ajouter
+            Add
           </Button>
         </form>
       </Form>
