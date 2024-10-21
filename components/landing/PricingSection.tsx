@@ -43,7 +43,7 @@ const plans = [
 
 function PricingSection() {
   return (
-    <div className="bg-neutral-900 py-20">
+    <div className="bg-neutral-900 py-20" id="pricing">
       <div className="container">
         <h2 className="title-h2 text-white text-center">
           Add Tasks with Ease Using TO-DO&apos;s Intuitive Interface

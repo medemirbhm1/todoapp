@@ -53,7 +53,7 @@ export default function Login() {
         const error = await res.json();
         throw new Error(error.message);
       }
-      router.push("/dashboard");
+      router.push(routes.DASHBOARD);
     } catch (err: unknown) {
       form.setError("root", {
         message: (err as { message: string }).message,

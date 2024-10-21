@@ -3,7 +3,7 @@ import { Input } from "../ui/input";
 
 function NewsLetter() {
   return (
-    <div className="container py-32 text-center">
+    <div className="container py-32 text-center" id="newsletter">
       <h2 className="title-h2">Subcribe Now! and Get Discounts Up To 70%</h2>
       <p className="mt-6 text-neutral-500 mb-12">
         Sign up today and start enjoying amazing benefits, including discounts!

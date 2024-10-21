@@ -8,7 +8,7 @@ function AddTaskSection() {
       <div className="container flex flex-col text-center lg:flex-row lg:text-left items-center gap-10">
         <div>
           <h2 className="title-h2 text-white">
-            Add Tasks with Ease Using TO-DO's Intuitive Interface
+            Add Tasks with Ease Using TO-DO&apos;s Intuitive Interface
           </h2>
           <p className="mt-6 text-neutral-300 mb-8">
             Quickly and Effortlessly Create Tasks to Stay Organized and On Track

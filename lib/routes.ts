@@ -3,7 +3,8 @@ const routes = {
   LOGIN: "/login",
   SIGNUP: "/signup",
   DASHBOARD: "/dashboard",
-  PROFILE: "/dashboard/profile",
+  USER: "/dashboard/user",
+  NEW_TASK: "/dashboard/newtask",
 };
 
 export default routes;

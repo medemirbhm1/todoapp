@@ -48,7 +48,7 @@ const features = [
 ];
 function FeaturesSection() {
   return (
-    <div className="container my-20">
+    <div className="container my-20" id="features">
       <h2 className="title-h2">
         Experience the Ultimate Task Management Solution with TODOS Robust
         Features

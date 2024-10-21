@@ -16,11 +16,9 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import routes from "@/lib/routes";
 
 const navigationLinks = [
-  { title: "Home", href: "#home" },
   { title: "Features", href: "#features" },
   { title: "Pricing", href: "#pricing" },
-  { title: "About", href: "#about" },
-  { title: "Contact", href: "#contact" },
+  { title: "Newsletter", href: "#newsletter" },
 ];
 
 export default function Navbar() {
@@ -29,7 +27,10 @@ export default function Navbar() {
   return (
     <header className="z-50 w-full bg-neutral-900 text-white backdrop-blur">
       <div className="container flex h-20 items-center justify-between">
-        <Link href="/" className="mr-6 flex items-center space-x-2">
+        <Link
+          href={routes.LANDING}
+          className="mr-6 flex items-center space-x-2"
+        >
           TODOS
         </Link>
         <NavigationMenu className="hidden md:flex">
@@ -57,7 +58,7 @@ export default function Navbar() {
           </SheetTrigger>
           <SheetContent side="left" className="">
             <Link
-              href="/"
+              href={routes.LANDING}
               className="flex items-center"
               onClick={() => setIsOpen(false)}
             >
@@ -80,9 +81,9 @@ export default function Navbar() {
                     Login
                   </Button>
                 </Link>
-                <Link className="block" href={routes.REGISTER}>
+                <Link className="block" href={routes.SIGNUP}>
                   <Button className="w-full" variant="secondary">
-                    Register
+                    Signup
                   </Button>
                 </Link>
               </div>

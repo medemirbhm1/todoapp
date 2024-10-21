@@ -17,7 +17,8 @@ export function createToken(payload: TokenPayload): string {
 export async function verifyToken(token: string) {
   try {
     return jose.jwtVerify(token, secret);
-  } catch (err) {
+  } catch (err: unknown) {
+    console.error(err);
     return null;
   }
 }
