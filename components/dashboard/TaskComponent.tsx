@@ -26,11 +26,7 @@ const TaskComponent = ({ task }: { task: Task }) => {
       key={task.id}
       className="flex items-center justify-between p-4 my-2 bg-gray-100 rounded-md"
     >
-      <div
-        className={cn(
-          task.isDone ? "line-through text-gray-400" : "text-black"
-        )}
-      >
+      <div className={cn(isDone ? "line-through text-gray-400" : "text-black")}>
         {task.title}
       </div>
       <div className="flex items-center gap-4">
